@@ -24,6 +24,18 @@ const quiz = {
             console.log(vm.score);
             console.log(select);
         }
+        vm.sendScore = (name) => {
+            for (let i = 0; i < vm.score.length; i++) {
+            if (vm.score[i]) {
+                vm.grade++;
+                }
+            } 
+            QuizService.addScores(vm.grade, name).then(function (response) {
+            vm.scoreList = response.data;
+            
+            console.log(response);
+            })
+        }   
     }]
 }
 

@@ -13,11 +13,11 @@ function QuizService($http) {
             url: "/scores"
         });
     }
-    self.addScores = (newscore) => {
+    self.addScores = (grade, name) => {
         return $http({
             method: "POST",
             url: "/scores",
-            data: {...newscore}
+            data: {score : grade, player_name : name}
         })
     }
 }

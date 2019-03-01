@@ -9,4 +9,6 @@
         </div>
     </form>
 </section>
-<button ng-click="$ctrl.sendScore(newscore)">Submit</button>
+<form>
+<input type="text" ng-model="$ctrl.name">    
+<button ng-click="$ctrl.sendScore($ctrl.name)">Submit</button>
