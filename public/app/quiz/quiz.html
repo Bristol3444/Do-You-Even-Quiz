@@ -1,0 +1,12 @@
+<section ng-repeat="questions in $ctrl.questionList track by $index">
+    <p>{{questions.question}}</p>
+    <form class="form">
+        <div class="choices">
+        <p>{{questions.choice_one}}</p><input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_one, questions.answer, $index)"></button>
+        <p>{{questions.choice_two}}</p><input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_two, questions.answer, $index)"></button>
+        <p>{{questions.choice_three}}</p><input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_three, questions.answer, $index)"></button>
+        <p>{{questions.choice_four}}</p><input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_four, questions.answer, $index)"></button>
+        </div>
+    </form>
+</section>
+<button ng-click="$ctrl.sendScore(newscore)">Submit</button>
