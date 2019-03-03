@@ -7,4 +7,7 @@ angular.module("QuizModule").config(["$routeProvider", function($routeProvider) 
         .when("/scores", {
             template: "<scores></scores>"
         })
+        .otherwise("/quiz",  {
+            template: "<qiuz></quiz>"
+        })
 }]);

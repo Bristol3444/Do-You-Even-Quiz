@@ -1,6 +1,7 @@
-<p>scores</p>
-<section ng-repeat="results in $ctrl.scoresList">
-    <p>{{results.id}}</p>
-    <p>{{results.player_name}}</p>
-    <p>{{results.score}}</p>
+<section class="scores-whole">
+    <h3>High Scores</h3>
+    <section class="high-scores" ng-repeat="results in $ctrl.scoresList">
+        <p class="name">{{$index + 1}}. {{results.player_name}}</p>
+        <p class="score">Score: {{(results.score / 5) * 100}}%</p>
+    </section>
 </section>

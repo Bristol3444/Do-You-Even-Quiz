@@ -78,8 +78,24 @@ h3 {
     background-color: #09264a;
     color: white;
 }
-.whole {
+.quiz-whole {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.scores-whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.high-scores {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    background-color: white;
+    border: 1px solid #09264a;
+    font-family: 'Laila', serif;
+    padding-left: 20px;
+    padding-right: 20px;
 }
