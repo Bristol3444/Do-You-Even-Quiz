@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+}
+.landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blanchedalmond;
+    height: 10vh;
+    padding: 10px;
+}
+a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: #09264a;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #09264a;
+}
+.quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    border: 1px solid #09264a;
+    background-color: white;
+}
+.form {
+    padding-right: 20px;
+}
+.question {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    padding: 20px;
+}
+.choices {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    font-family: 'Laila', serif;
+}
+.submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    margin: 0;
+    padding: 20px;
+}
+.submit-type {
+    width: 300px;
+    height: 30px;
+    font-family: 'Laila', serif;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #09264a;
+    border-radius: 10px;
+    padding-left: 5px;
+    box-shadow: 0 0 8px #888888;
+}
+.submit-btn {
+    font-family: 'Laila', serif;
+    font-size: .85em;
+    border: 1px solid #09264a;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 8px #888888;
+}
+.submit-btn:hover {
+    background-color: #09264a;
+    color: white;
+}
+.whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

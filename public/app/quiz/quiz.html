@@ -1,14 +1,18 @@
-<section ng-repeat="questions in $ctrl.questionList track by $index">
-    <p>{{questions.question}}</p>
-    <form class="form">
-        <div class="choices">
-        <p>{{questions.choice_one}}</p><input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_one, questions.answer, $index)"></button>
-        <p>{{questions.choice_two}}</p><input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_two, questions.answer, $index)"></button>
-        <p>{{questions.choice_three}}</p><input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_three, questions.answer, $index)"></button>
-        <p>{{questions.choice_four}}</p><input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_four, questions.answer, $index)"></button>
-        </div>
-    </form>
+<section class="whole">
+    <section ng-repeat="questions in $ctrl.questionList track by $index" class="quiz">
+        <p class="question">{{$index + 1}}. {{questions.question}}</p>
+        <form class="form">
+            <div class="choices">
+            <p>a)<input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_one, questions.answer, $index)"></button>{{questions.choice_one}}</p>
+            <p>b)<input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_two, questions.answer, $index)"></button>{{questions.choice_two}}</p>
+            <p>c)<input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_three, questions.answer, $index)"></button>{{questions.choice_three}}</p>
+            <p>d)<input type="radio" name="choice" ng-click="$ctrl.selectedAnswer(questions.choice_four, questions.answer, $index)"></button>{{questions.choice_four}}</p>
+            </div>
+        </form>
+    </section>
 </section>
-<form>
-<input type="text" ng-model="$ctrl.name">    
-<button ng-click="$ctrl.sendScore($ctrl.name)">Submit</button>
+<section class="submit">
+    <input type="text" class="submit-type" placeholder="Enter Your Name" ng-model="$ctrl.name">    
+    <button class="submit-btn" ng-click="$ctrl.sendScore($ctrl.name)">Submit</button>
+</section>
+</section>

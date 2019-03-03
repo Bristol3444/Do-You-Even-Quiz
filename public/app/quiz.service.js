@@ -1,5 +1,5 @@
 "use strict";
-function QuizService($http) {
+function QuizService($http, $location) {
     const self = this;
     self.getQuestions = () => {
         return $http({
@@ -14,6 +14,7 @@ function QuizService($http) {
         });
     }
     self.addScores = (grade, name) => {
+        $location.path("/scores");
         return $http({
             method: "POST",
             url: "/scores",

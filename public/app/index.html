@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Laila|Open+Sans|Raleway|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Animal Quiz</title>
 </head>
 <body>
-    
-   <quiz></quiz>
+   <section class="landing">
+    <a href="#!/quiz">Quiz</a>
+    <h3> Animal Fact Quiz</h3>
+    <a href="#!/scores">Scores</a>
+   </section>
+   <ng-view></ng-view>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
