@@ -13,14 +13,16 @@ body {
     padding: 10px;
 }
 a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 1em;
     text-decoration: none;
     color: #09264a;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.25em;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 1.5em;
     text-decoration: none;
     color: #09264a;
 }
