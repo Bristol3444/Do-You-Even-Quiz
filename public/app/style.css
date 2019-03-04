@@ -30,7 +30,7 @@ h3 {
     justify-content: center;
     width: 75%;
     border: 1px solid #09264a;
-    background-color: white;
+    background-color: #EFF8FA;
 }
 .form {
     padding-right: 20px;
@@ -98,4 +98,8 @@ h3 {
     font-family: 'Laila', serif;
     padding-left: 20px;
     padding-right: 20px;
+}
+.quiz:hover {
+    background-color: #09264a;
+    color: white;
 }
